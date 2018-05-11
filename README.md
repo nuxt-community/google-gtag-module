@@ -14,6 +14,8 @@
 
 The module includes Google `googletagmanager.com/gtag/js` into your project and enables it with config you pass in as options.
 
+* Check the official reference [gtag](https://developers.google.com/analytics/devguides/collection/gtagjs/)
+
 ## Setup
 - Add `@nuxtjs/google-gtag` dependency using yarn or npm to your project
 - Add `@nuxtjs/google-gtag` to `modules` section of `nuxt.config.js`
