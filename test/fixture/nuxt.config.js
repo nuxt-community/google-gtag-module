@@ -7,11 +7,12 @@ module.exports = {
   render: {
     resourceHints: false
   },
-  modules: ['@@', {
-    id: 'test',
+  modules: ['@@'],
+  'google-gtag': {
+    id: 'UI_XXX',
     options: {
       'send_page_view': false,
       'anonymize_ip': true
     }
-  }]
+  }
 }
