@@ -37,8 +37,9 @@ The module features
  
  // example config
  'google-gtag':{
-   id: 'UA-XXXX-XX',
+   id: 'UA-XXXX-XX', // required
    options:{
+     // this are the config options for `gtag
      // check out official docs: https://developers.google.com/analytics/devguides/collection/gtagjs/
      anonymize_ip: true, // anonymize IP 
      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
@@ -53,7 +54,11 @@ The module features
 
 ## Usage
 
-Module Description
+This module inlcudes Google gtag in your NuxtJs project and enables every page tracking by default. You can use gtag inside of your components/functions/methods like follow:
+
+```
+  this.$gtag('event', 'your_event', { /* track something awesome */})
+```
 
 ## Development
 
