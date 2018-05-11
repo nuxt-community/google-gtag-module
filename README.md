@@ -6,7 +6,7 @@
 [![Dependencies](https://david-dm.org/https://github.com/nuxt-community/google-gtag/status.svg?style=flat-square)](https://david-dm.org/https://github.com/nuxt-community/google-gtag)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
-> Google GTag for Nuxt.js
+> Google official gtagjs for Nuxt.js
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
