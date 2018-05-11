@@ -39,10 +39,14 @@ The module features
  'google-gtag':{
    id: 'UA-XXXX-XX',
    options:{
-     anonymize_ip: true
+     // check out official docs: https://developers.google.com/analytics/devguides/collection/gtagjs/
+     anonymize_ip: true, // anonymize IP 
+     send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+     linker:{
+       domains:['domain.com','domain.org']
+     }
    },
-   debug: true,
-   // disableRouter:true // => by default router is enabled by default
+   debug: true // enable to track in dev mode
  }
 }
 ```
