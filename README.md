@@ -12,7 +12,7 @@
 
 ## Features
 
-The module features
+The module includes Google `googletagmanager.com/gtag/js` into your project and enables it with config you pass in as options.
 
 ## Setup
 - Add `@nuxtjs/google-gtag` dependency using yarn or npm to your project
@@ -59,6 +59,10 @@ This module inlcudes Google gtag in your NuxtJs project and enables every page t
 ```
   this.$gtag('event', 'your_event', { /* track something awesome */})
 ```
+
+## Check functionalities
+
+Install [`Google Tag Assistant`](https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=en) and see if your page is being tracked.
 
 ## Development
 
