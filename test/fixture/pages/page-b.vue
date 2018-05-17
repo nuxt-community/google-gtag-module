@@ -6,6 +6,10 @@
 
 <script>
   export default {
-
+    head () {
+      return {
+        title: 'Page B'
+      }
+    }
   }
 </script>

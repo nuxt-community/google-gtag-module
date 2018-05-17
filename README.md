@@ -27,20 +27,13 @@ The module includes Google `googletagmanager.com/gtag/js` into your project and 
     '@nuxtjs/google-gtag',
 
     // With options
-    ['@nuxtjs/google-gtag', { /* module options */ }],
-    
-    
+    ['@nuxtjs/google-gtag', { /* module options */ }],    
  ]
- // alternative also as
- 'google-gtag':{
-   // your options
- }
- 
- 
+  
  // example config
  'google-gtag':{
    id: 'UA-XXXX-XX', // required
-   options:{
+   config:{
      // this are the config options for `gtag
      // check out official docs: https://developers.google.com/analytics/devguides/collection/gtagjs/
      anonymize_ip: true, // anonymize IP 
@@ -49,7 +42,8 @@ The module includes Google `googletagmanager.com/gtag/js` into your project and 
        domains:['domain.com','domain.org']
      }
    },
-   debug: true // enable to track in dev mode
+   debug: true, // enable to track in dev mode
+   disableAutoPageTrack: false // disable if you don't want to track each page route with router.afterEach(...)
  }
 }
 ```

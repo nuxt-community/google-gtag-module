@@ -29,9 +29,7 @@
     "testEnvironment": "node",
     "collectCoverage": true
   },
-  "dependencies": {
-    "vue-gtagjs": "^1.0.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "nuxt": "latest",
     "codecov": "latest",

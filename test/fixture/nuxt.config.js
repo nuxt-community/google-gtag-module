@@ -7,12 +7,16 @@ module.exports = {
   render: {
     resourceHints: false
   },
+  head: {
+    title: 'Demo Page of Google GTag'
+  },
   modules: [['@@', {
-    id: 'UA-XXX_XXX',
-    options: {
-      'send_page_view': true,
-      'anonymize_ip': true,
-      debug: true
-    }
+    id: 'UA-XXX-XX',
+    config: {
+      'send_page_view': false,
+      'anonymize_ip': true
+    },
+    debug: true,
+    disableAutoPageTrack: false
   }]]
 }
