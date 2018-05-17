@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/google-gtag",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Google GTag for Nuxt.js",
   "license": "MIT",
   "contributors": [
