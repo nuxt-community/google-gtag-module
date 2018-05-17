@@ -4,9 +4,28 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.0.5"></a>
 ## [0.0.5](https://github.com/https://github.com/nuxt-community/google-gtag/compare/v0.0.4...v0.0.5) (2018-05-17)
+Removed dependency of `vue-gtag`
 
+Bugfix: 
+* this.$gtag() works not correctly in components
 
+Improved:
+* new options `disableAutoPageTrack`
+* Debug improved to track all `$gtag()` calls and prints out the arguments
+* added test for event tracking
 
+Breaking Change:
+
+* `options` renamed to `config`
+```js
+// nuxt.config.js
+'google-gtag':{
+ id:'ID_XX_XX',
+ config: {
+   // your gtag options
+ }
+}
+```
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/https://github.com/nuxt-community/google-gtag/compare/v0.0.3...v0.0.4) (2018-05-11)
 
