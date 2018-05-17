@@ -16,7 +16,7 @@ module.exports = {
       'send_page_view': false,
       'anonymize_ip': true
     },
-    debug: true,
+    debug: false,
     disableAutoPageTrack: false
   }]]
 }
