@@ -62,6 +62,9 @@ This module inlcudes Google gtag in your NuxtJs project and enables every page t
 ```
   this.$gtag('event', 'your_event', { /* track something awesome */})
 ```
+See official docs:
+* [gtagjs](https://developers.google.com/analytics/devguides/collection/gtagjs/)
+* [adwords](https://developers.google.com/adwords-remarketing-tag/#configuring_the_global_site_tag_for_multiple_accounts)
 
 ## Check functionalities
 
