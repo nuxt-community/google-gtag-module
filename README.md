@@ -46,7 +46,7 @@ The module includes Google `googletagmanager.com/gtag/js` into your project and 
    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...)
    // optional you can add more configuration like [AdWords](https://developers.google.com/adwords-remarketing-tag/#configuring_the_global_site_tag_for_multiple_accounts)
    additionalAccounts:[{
-     id: 'AW-XXXX-XX', // required if you are adding additional IDs
+     id: 'AW-XXXX-XX', // required if you are adding additional accounts
      config:{
        send_page_view:false // optional configurations
      }
