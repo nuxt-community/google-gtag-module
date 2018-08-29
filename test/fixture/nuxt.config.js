@@ -17,6 +17,12 @@ module.exports = {
       'anonymize_ip': true
     },
     debug: false,
-    disableAutoPageTrack: false
+    disableAutoPageTrack: false,
+    additionalAccounts: [{
+      id: 'AW-XXX-XX',
+      config: {
+        'send_page_view': false
+      }
+    }]
   }]]
 }
