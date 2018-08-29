@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/https://github.com/nuxt-community/google-gtag/compare/v1.0.3...v1.0.4) (2018-08-29)
-
+* add additionalAccounts options
 
 
 <a name="1.0.3"></a>
