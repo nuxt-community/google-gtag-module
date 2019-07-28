@@ -12,7 +12,7 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt test/fixture/prod",
+    "dev": "nuxt test/fixture/dev",
     "lint": "eslint --ext .js,.vue lib test",
     "test": "yarn lint && jest",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish"
