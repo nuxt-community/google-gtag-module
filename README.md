@@ -62,6 +62,22 @@ This module inlcudes Google gtag in your NuxtJs project and enables every page t
 ```
   this.$gtag('event', 'your_event', { /* track something awesome */})
 ```
+
+#### To make sure that every page is tracked correctly
+As the router code sometimes runs before head data is set correctly you can use following approach to make sure that everything is set correctly:
+```js
+// inside of your Page.vue/Layout.vue file
+ mounted() {
+    if (process.browser) {
+      this.$gtag('config', 'UA-XXXX-XXX', {
+        page_title: this.$metaInfo.title,
+        page_path: this.$route.fullPath,
+      })
+    }
+  }
+```
+
+
 See official docs:
 * [gtagjs](https://developers.google.com/analytics/devguides/collection/gtagjs/)
 * [adwords](https://developers.google.com/adwords-remarketing-tag/#configuring_the_global_site_tag_for_multiple_accounts)
