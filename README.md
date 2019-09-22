@@ -66,6 +66,7 @@ This module inlcudes Google gtag in your NuxtJs project and enables every page t
 #### To make sure that every page is tracked correctly
 As the router code sometimes runs before head data is set correctly you can use following approach to make sure that everything is set correctly:
 ```js
+// make sure to set disableAutoPageTrack: true inside of nuxt.config.js
 // inside of your Page.vue/Layout.vue file
  mounted() {
     if (process.browser) {
