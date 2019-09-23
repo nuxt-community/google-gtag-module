@@ -5,11 +5,11 @@
 </template>
 
 <script>
-  export default {
-    head () {
-      return {
-        title: 'Page B'
-      }
+export default {
+  head () {
+    return {
+      title: 'Page B'
     }
   }
+}
 </script>
