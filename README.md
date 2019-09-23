@@ -105,6 +105,22 @@ You can use gtag inside of your components/functions/methods like follow:
 this.$gtag('event', 'your_event', { /* track something awesome */})
 ```
 
+#### To make sure that every page is tracked correctly
+As the router code sometimes runs before head data is set correctly you can use following approach to make sure that everything is set correctly:
+
+```js
+// make sure to set disableAutoPageTrack: true inside of nuxt.config.js
+// inside of your Page.vue/Layout.vue file
+ mounted() {
+    if (process.browser) {
+      this.$gtag('config', 'UA-XXXX-XXX', {
+        page_title: this.$metaInfo.title,
+        page_path: this.$route.fullPath,
+      })
+    }
+  }
+```
+
 See official docs:
 
 * [gtagjs](https://developers.google.com/analytics/devguides/collection/gtagjs/)
