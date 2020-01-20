@@ -103,7 +103,8 @@ You can add more configuration like [AdWords](https://developers.google.com/adwo
 
 - Default `undefined`
 
-You can define that gtag will be checked on every page load. Define a function that takes `app` as parameter and return boolean.
+You can define that gtag injection will be checked on every page load. Define a function that takes `app` as parameter and return boolean. You can, for example, create a cookie
+that disables loading of gtag (see example above).
 
 ## Usage
 
