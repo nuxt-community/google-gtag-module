@@ -10,6 +10,9 @@
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
+# Attention
+This project is looking for maintainers. Consider to make use of [gtm](https://github.com/nuxt-community/gtm-module):
+
 ## Features
 
 The module includes Google `googletagmanager.com/gtag/js` into your project and enables it with config you pass in as options.
