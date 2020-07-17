@@ -101,7 +101,7 @@ You can add more configuration like [AdWords](https://developers.google.com/adwo
 
 ## Usage
 
-This module inlcudes Google gtag in your NuxtJs project and enables every page tracking by default.
+This module includes Google gtag in your NuxtJs project and enables every page tracking by default.
 You can use gtag inside of your components/functions/methods like follow:
 
 ```js
