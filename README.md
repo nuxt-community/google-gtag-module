@@ -11,7 +11,7 @@
 [📖 **Release Notes**](./CHANGELOG.md)
 
 # Attention
-This project is looking for maintainers. Consider to make use of [gtm](https://github.com/nuxt-community/gtm-module):
+This project is looking for maintainers. Please see [RFC](https://github.com/nuxt-community/gtm-module/issues/82) for future of module.
 
 ## Features
 
