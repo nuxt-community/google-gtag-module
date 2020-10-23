@@ -58,6 +58,9 @@ yarn add @nuxtjs/google-gtag # or npm install @nuxtjs/google-gtag
       }
     },
     debug: true, // enable to track in dev mode
+    runtimeDisable: function (app) { // cookie based logic for disabling gtag runtime
+      return app.$cookies.get('disable_ga') // set $cookie.set('disable_ga', true) somewhere to disable
+    },
     disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
     additionalAccounts: [{
       id: 'AW-XXXX-XX', // required if you are adding additional accounts
@@ -98,6 +101,13 @@ Disable if you don't want to track each page route with router.afterEach(...).
 - Default: `[]`
 
 You can add more configuration like [AdWords](https://developers.google.com/adwords-remarketing-tag/#configuring_the_global_site_tag_for_multiple_accounts)
+
+### `disableRuntime`
+
+- Default `undefined`
+
+You can define that gtag injection will be checked on every page load. Define a function that takes `app` as parameter and return boolean. You can, for example, create a cookie
+that disables loading of gtag (see example above).
 
 ## Usage
 
