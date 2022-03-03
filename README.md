@@ -49,7 +49,7 @@ yarn add @nuxtjs/google-gtag # or npm install @nuxtjs/google-gtag
     '@nuxtjs/google-gtag'
   ],
   'google-gtag': {
-    id: 'UA-XXXX-XX',
+    id: 'G-XXXX',
     config: {
       anonymize_ip: true, // anonymize IP 
       send_page_view: false, // might be necessary to avoid duplicated page track on page reload
@@ -113,15 +113,15 @@ As the router code sometimes runs before head data is set correctly you can use 
 
 ```js
 // make sure to set disableAutoPageTrack: true inside of nuxt.config.js
-// inside of your Page.vue/Layout.vue file
- mounted() {
-    if (process.browser) {
-      this.$gtag('config', 'UA-XXXX-XXX', {
-        page_title: this.$metaInfo.title,
-        page_path: this.$route.fullPath,
-      })
-    }
+// inside of your app.vue/Layout.vue file
+mounted() {
+  if (process.browser) {
+    this.$gtag('config', 'G-XXXX-XXX', {
+      page_title: this.$metaInfo.title,
+      page_path: this.$route.fullPath,
+    })
   }
+}
 ```
 
 See official docs:
@@ -137,7 +137,8 @@ Install [`Google Tag Assistant`](https://chrome.google.com/webstore/detail/tag-a
 
 - Clone this repository
 - Install dependencies using `yarn install` or `npm install`
-- Start development server using `npm run dev`
+- Run `yarn dev:setup` to generate type stubs.
+- Use `yarn dev` to start [playground](./playground) in development mode.
 
 ## License
 
